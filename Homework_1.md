@@ -120,7 +120,7 @@ public class NewBehaviourScript1  MonoBehaviour {
   ```cs
   foreach (Transform child in transform) {  
     Destroy(child.gameObject);  
-}  
+ }  
   ```
   
   

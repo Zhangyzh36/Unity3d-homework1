@@ -11,7 +11,7 @@
 - 编写一个代码，使用 debug 语句来验证 MonoBehaviour 基本行为或事件触发的条件
 
 
-```
+``` cs
 using System.Collections;  
 using System.Collections.Generic;  
 using UnityEngine;  
@@ -64,7 +64,7 @@ public class NewBehaviourScript1  MonoBehaviour {
     }  
    
 }  
-```
+``` cs
 
 - 查找脚本手册，了解 GameObject，Transform，Component 对象
  - 分别翻译官方对三个对象的描述（Description）

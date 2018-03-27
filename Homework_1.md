@@ -116,7 +116,8 @@ public class NewBehaviourScript1  MonoBehaviour {
      Debug.Log(child.position);  
  } 
   ```
-  - 清除所有子对象
+  - 清除所有子对象
+  
   ```cs
   foreach (Transform child in transform) {  
     Destroy(child.gameObject);  

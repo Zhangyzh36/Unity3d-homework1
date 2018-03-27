@@ -96,41 +96,41 @@
     
      
 - 整理相关学习资料，编写简单代码验证以下技术的实现：
-  - 查找对象
-  ```cs
-  public static GameObject Find(string name);
-  ```
-  - 添加子对象
-  ```cs
-  public static GameObject CreatePrimitive(PrimitiveType type);
-  ```
-  - 遍历对象树
-  ```cs
-  foreach (Transform child in transform) {  
-     Debug.Log(child.position);  
-  } 
-  ```
-  - 清除所有子对象
+     - 查找对象
+       ```cs
+       public static GameObject Find(string name);
+       ```
+     - 添加子对象
+       ```cs
+       public static GameObject CreatePrimitive(PrimitiveType type);
+       ```
+     - 遍历对象树
+       ```cs
+       foreach (Transform child in transform) {  
+          Debug.Log(child.position);  
+       } 
+       ```
+     - 清除所有子对象
   
-  ```cs
-  foreach (Transform child in transform) {  
-    Destroy(child.gameObject);  
-  }  
-  ```
+       ```cs
+       foreach (Transform child in transform) {  
+         Destroy(child.gameObject);  
+       }  
+       ```
   
   
 - 资源预设（Prefabs）与 对象克隆 (clone)
- - 预设（Prefabs）有什么好处？
-  预设是一个非常容易复用的模板，我们能够快速创建大量相同属性的对象。操作简单，代码量少。
- - 预设与对象克隆 (clone or copy or Instantiate of Unity Object) 关系？
- 使用预设复用时，当修改预设的某一个属性时，通过模板创建出来的对象的对应属性也会做出相应的改变，这样有利于代码的修改与维护。而通过克隆出的对象是独立于被克隆的原对象的，相应的属性改变均为独立的。
- - 制作 table 预制，写一段代码将 table 预制资源实例化成游戏对象
-     ```cs
-     public GameObject obj;
-     void Start () {
-         GameObject instance = (GameObject)Instantiate(obj.gameObject, transform.position, transform.rotation);
-     }
-     ```
+     - 预设（Prefabs）有什么好处？
+          预设是一个非常容易复用的模板，我们能够快速创建大量相同属性的对象。操作简单，代码量少。
+     - 预设与对象克隆 (clone or copy or Instantiate of Unity Object) 关系？
+     使用预设复用时，当修改预设的某一个属性时，通过模板创建出来的对象的对应属性也会做出相应的改变，这样有利于代码的修改与维护。而通过克隆出的对象是独        立于被克隆的原对象的，相应的属性改变均为独立的。
+     - 制作 table 预制，写一段代码将 table 预制资源实例化成游戏对象
+          ```cs
+          public GameObject obj;
+          void Start () {
+              GameObject instance = (GameObject)Instantiate(obj.gameObject, transform.position, transform.rotation);
+          }
+          ```
  - 尝试解释组合模式（Composite Pattern  一种设计模式),并 使用 BroadcastMessage() 方法向子对象发送消息
     - 组合模式是将对象组合成树形结构，以表示“部分整体”的层次结构，并使得用户对单个对象和组合对象的使用具有一致性。
     - 使用 BroadcastMessage() 方法向子对象发送消息

@@ -87,10 +87,10 @@ public class NewBehaviourScript1  MonoBehaviour {
  - 描述下图中 table 对象（实体）的属性、table 的 Transform 的属性、 table 的部件
     ![cd](httpspmlpml.github.iounity3d-learningimagesch02ch02-homework.png)
        - table的属性
-            - Tag  Untagged
-            - Layer  Default
+          - Tag  Untagged
+          - Layer  Default
        - table的Transform属性有
-           - Position  X = 0，Y = 0，Z = 0
+          - Position  X = 0，Y = 0，Z = 0
           - Rotation  X = 0，Y = 0，Z = 0
           - Scale  X = 1，Y = 1，Z = 1
        -  table 是一个 GameObject，右边Inspector视图中的部件
@@ -98,8 +98,7 @@ public class NewBehaviourScript1  MonoBehaviour {
           - Mesh Filter
           - Box Collider
           - Mesh Renderer
-    - 用 UML 图描述 三者的关系
-    !()[]
+    
      
 - 整理相关学习资料，编写简单代码验证以下技术的实现：
   - 查找对象
@@ -114,14 +113,14 @@ public class NewBehaviourScript1  MonoBehaviour {
   ```cs
   foreach (Transform child in transform) {  
      Debug.Log(child.position);  
- } 
+  } 
   ```
   - 清除所有子对象
   
   ```cs
   foreach (Transform child in transform) {  
     Destroy(child.gameObject);  
- }  
+  }  
   ```
   
   
